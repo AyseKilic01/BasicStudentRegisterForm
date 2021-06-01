@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BasicStudentRegisterForm.MdiForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,22 @@ namespace BasicStudentRegisterForm
         public FrmMain()
         {
             InitializeComponent();
+        }
+        
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+
+        }
+        FrmStudent student;
+        private void btnStudent_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if(student == null)
+            {
+                student = new FrmStudent();
+                student.MdiParent = this;
+                student.Show();
+            }
         }
     }
 }
