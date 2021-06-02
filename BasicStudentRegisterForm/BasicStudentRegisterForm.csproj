@@ -122,6 +122,20 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SMBusiness\SMBusiness.csproj">
+      <Project>{647ec928-e0b9-45d1-8648-72c0f0ab9ee9}</Project>
+      <Name>SMBusiness</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMDataAccess\SMDataAccess.csproj">
+      <Project>{feacba94-b1f1-47b9-a68d-d9b327c0f15c}</Project>
+      <Name>SMDataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMEntity\SMEntity.csproj">
+      <Project>{4892c586-1491-4788-9f09-2b420df3ef99}</Project>
+      <Name>SMEntity</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

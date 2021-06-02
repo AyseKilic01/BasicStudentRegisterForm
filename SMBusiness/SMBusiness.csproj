@@ -51,15 +51,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\IService.cs" />
+    <Compile Include="Concrete\StudentManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Abstract\" />
-    <Folder Include="Concrete\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SMDataAccess\SMDataAccess.csproj">
+      <Project>{feacba94-b1f1-47b9-a68d-d9b327c0f15c}</Project>
+      <Name>SMDataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMEntity\SMEntity.csproj">
+      <Project>{4892c586-1491-4788-9f09-2b420df3ef99}</Project>
+      <Name>SMEntity</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

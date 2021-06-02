@@ -60,6 +60,7 @@
             this.Name = "FrmStudentList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmStudent";
+            this.Load += new System.EventHandler(this.FrmStudentList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grdStudentControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);

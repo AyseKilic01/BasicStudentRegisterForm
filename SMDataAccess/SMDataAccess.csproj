@@ -54,7 +54,7 @@
     <Compile Include="Abstract\IRepository.cs" />
     <Compile Include="Abstract\IStudentDAL.cs" />
     <Compile Include="Concrete\Repos\GenericRepository.cs" />
-    <Compile Include="Concrete\StudentDAL.cs" />
+    <Compile Include="EntityFrame\EfStudentDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
