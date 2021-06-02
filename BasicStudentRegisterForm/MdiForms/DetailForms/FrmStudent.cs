@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BasicStudentRegisterForm.MdiForms
+namespace BasicStudentRegisterForm.MdiForms.DetailForms
 {
     public partial class FrmStudent : Form
     {

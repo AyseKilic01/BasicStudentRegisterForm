@@ -23,12 +23,12 @@ namespace BasicStudentRegisterForm
             Application.Exit();
 
         }
-        FrmStudent student;
+        FrmStudentList student;
         private void btnStudent_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             if(student == null)
             {
-                student = new FrmStudent();
+                student = new FrmStudentList();
                 student.MdiParent = this;
                 student.Show();
             }

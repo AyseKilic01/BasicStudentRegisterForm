@@ -1,4 +1,4 @@
-﻿namespace BasicStudentRegisterForm.MdiForms
+﻿namespace BasicStudentRegisterForm.MdiForms.DetailForms
 {
     partial class FrmStudent
     {
@@ -34,10 +34,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1176, 450);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.ClientSize = new System.Drawing.Size(1213, 450);
             this.Name = "FrmStudent";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmStudent";
             this.ResumeLayout(false);
 
