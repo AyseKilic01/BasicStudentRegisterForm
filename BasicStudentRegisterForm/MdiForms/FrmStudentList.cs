@@ -1,4 +1,5 @@
-﻿using SMBusiness.Concrete;
+﻿using BasicStudentRegisterForm.MdiForms.DetailForms;
+using SMBusiness.Concrete;
 using SMDataAccess.Abstract;
 using SMDataAccess.EntityFrame;
 using SMEntity.Concrete.DataModel;
@@ -19,6 +20,7 @@ namespace BasicStudentRegisterForm.MdiForms
         #region const
 
         StudentManager student = new StudentManager(new EfStudentDAL());
+        FrmStudent frms = new FrmStudent();
         #endregion
         public FrmStudentList()
         {
@@ -30,6 +32,11 @@ namespace BasicStudentRegisterForm.MdiForms
         private void FrmStudentList_Load(object sender, EventArgs e)
         {
             grdStudentControl.DataSource = student.GetAllBL();
+        }
+
+        private void gridView1_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
+        {
+            frms.Show();
         }
     }
 }
